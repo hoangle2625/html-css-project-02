@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #ffb900;
+    --font-heading: sen, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* common */
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 50px;
+    min-width: 118px;
+    text-align: center;
+    color: #ffffff;
+    background: #171100;
+    border-radius: 999px;
+    padding: 0 16px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* header */
+.header.fixed {
+    position: sticky;
+    top: -28px;
+    background: #fffcf4;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav a {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #5f5b53;
+    padding: 8px 21px;
+    position: relative;
+}
+
+.nav a:hover,
+.nav ul .active a {
+    /* font-weight: 600; */
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
+.nav ul .active a::after {
+    position: absolute;
+    left: 21px;
+    bottom: 5px;
+    content: "";
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+    display: inline-block;
+}
+
+.body .action {
+    margin-left: 49px;
+}
+
+.nav .sign-up-btn {
+    width: 144px;
+}
+
+/* ======== hero ========= */
+.hero {
+    padding: 56px 0 65px;
+    background: #fffcf4;
+}
+
+.hero .body {
+    display: flex;
+}
+
+/* hero left */
+.hero .media-blog {
+    width: 48%;
+    position: relative;
+}
+
+.media-blog .image {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hero-summary {
+    position: absolute;
+    bottom: 48px;
+    right: 0;
+    width: 270px;
+    background: #ffffff;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 24px 24px 10px;
+}
+
+.hero-summary .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.hero-summary .icon {
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+}
+
+.hero-summary .label {
+    font-size: 1.4rem;
+    line-height: 1.85;
+    color: #5f5b53;
+}
+
+.hero-summary .info {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+/* hero right */
+.hero .content-blog {
+    width: 52%;
+    padding: 64px 0 0 130px;
+}
+
+.content-blog .heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.content-blog .desc {
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+
+.content-blog .cta-group {
+    margin-top: 55px;
+    margin-bottom: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.cta-group .hero-cta {
+    min-width: 180px;
+    background: var(--primary);
+    border-radius: 32px;
+    padding: 17px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #ffffff;
+    margin-right: 28px;
+}
+
+.hero .watch-video {
+    border: none;
+    background: #fffcf4;
+    display: flex;
+    line-height: 42px;
+    font-weight: 600;
+    font-size: 1.8;
+    color: #171100;
+    cursor: pointer;
+}
+
+.hero .watch-video .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+    margin-right: 14px;
+}
+
+.hero .watch-video span {
+    line-height: 42px;
+    font-weight: 600;
+    font-size: 1.8;
+    color: #171100;
+}
+
+.hero .stats {
+    display: flex;
+    gap: 0 28px;
+    margin-top: -22px;
+}
+
+.hero .stats strong {
+    margin-top: -14px;
+    padding-right: 8px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.2;
+    color: #171100;
+}
